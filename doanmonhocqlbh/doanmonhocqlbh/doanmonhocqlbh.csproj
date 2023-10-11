@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3624EF10-3F85-43B9-9460-01513835C999}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>doanmonhocqlbh</RootNamespace>
+    <AssemblyName>doanmonhocqlbh</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangnhap.Designer.cs">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doanhthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doanhthu.Designer.cs">
+      <DependentUpon>doanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonHang.Designer.cs">
+      <DependentUpon>DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mua.Designer.cs">
+      <DependentUpon>Mua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VanChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VanChuyen.Designer.cs">
+      <DependentUpon>VanChuyen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dangnhap.resx">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doanhthu.resx">
+      <DependentUpon>doanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonHang.resx">
+      <DependentUpon>DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mua.resx">
+      <DependentUpon>Mua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VanChuyen.resx">
+      <DependentUpon>VanChuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{4b527ab8-a30e-470f-91ba-f1f5bc65b41d}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{aa4fcd51-e963-4bed-9c2e-8104e9693500}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
